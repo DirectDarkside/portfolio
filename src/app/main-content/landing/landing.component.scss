@@ -1,7 +1,35 @@
+@import './../../../styles.scss';
+
 section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     h1{
         text-align: center;
-        font-size: 128px;
+        font-size: 180px;
+        margin-top: 32px;
         margin-bottom: 0;
+    }
+}
+
+.landing_line {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    width: 50%;
+}
+
+.landing_info_container {
+    width: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    b {
+        color: $goldFont;
+        font-size: 48px;
+        white-space: nowrap;
     }
 }
