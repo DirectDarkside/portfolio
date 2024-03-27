@@ -3,7 +3,6 @@ $goldFont: #FF9900;
 body {
     margin: 0;
     background-color: #FFFCF3;
-    width: 100vw;
     display: flex;
 
     >app-root{
@@ -13,4 +12,10 @@ body {
         align-items: center;
     }
 
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
