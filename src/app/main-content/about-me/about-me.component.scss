@@ -1,0 +1,21 @@
+@import './../../../styles.scss';
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    >div {
+        display: flex;
+        >div {
+            flex: 1;
+        }
+    }
+
+    p {
+        max-width: 620px;
+    }
+}
+
+h2 {
+    @include subHeadline
+}
