@@ -4,6 +4,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: 100%;
 
     h1{
         text-align: center;
@@ -31,5 +33,27 @@ section {
         color: $goldFont;
         font-size: 48px;
         white-space: nowrap;
+    }
+}
+
+.landing_mail_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;
+
+    >span {
+        transform: rotate(-90deg);
+        display: flex;
+        align-items: center;
+    }
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+        padding-bottom: 8px;
     }
 }

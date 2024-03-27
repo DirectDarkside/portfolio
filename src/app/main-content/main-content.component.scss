@@ -1,0 +1,9 @@
+.top_page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+app-landing {
+    flex: 1;
+}
