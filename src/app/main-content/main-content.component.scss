@@ -32,3 +32,14 @@ app-header {
     max-width: 100%;
     align-items: center;
 }
+
+.right_arrow_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    >img {
+        max-width: 236px;
+        width: 100%;
+    }
+}
