@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { LandingComponent } from './landing/landing.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { HeaderComponent } from '../../assets/shared/components/header/header.component';
+import { MySkillsComponent } from './my-skills/my-skills.component';
 
 @Component({
   selector: 'app-main-content',
@@ -9,7 +10,7 @@ import { HeaderComponent } from '../../assets/shared/components/header/header.co
     class:'main-content'
   },
   standalone: true,
-  imports: [LandingComponent, AboutMeComponent, HeaderComponent],
+  imports: [LandingComponent, AboutMeComponent, HeaderComponent, MySkillsComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })

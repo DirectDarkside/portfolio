@@ -1,0 +1,14 @@
+<section>
+    <div class="skills_container">
+        @for (skill of skills; track $index) {
+            <div>
+                <img src="/assets/shared/img/my-skills/icons/{{ skill.url }}" alt="angular">
+                <span>{{ skill.title }}</span>
+            </div>
+        }
+    </div>
+    <div class="sub_headline_container">
+        <h2>My skills</h2>
+    </div>
+
+</section>
