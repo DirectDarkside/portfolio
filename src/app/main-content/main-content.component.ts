@@ -3,17 +3,22 @@ import { LandingComponent } from './landing/landing.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { HeaderComponent } from '../../assets/shared/components/header/header.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @Component({
   selector: 'app-main-content',
   host: {
-    class:'main-content'
+    class: 'main-content',
   },
   standalone: true,
-  imports: [LandingComponent, AboutMeComponent, HeaderComponent, MySkillsComponent],
+  imports: [
+    LandingComponent,
+    AboutMeComponent,
+    HeaderComponent,
+    MySkillsComponent,
+    ProjectsComponent,
+  ],
   templateUrl: './main-content.component.html',
-  styleUrl: './main-content.component.scss'
+  styleUrl: './main-content.component.scss',
 })
-export class MainContentComponent {
-
-}
+export class MainContentComponent {}

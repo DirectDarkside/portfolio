@@ -57,3 +57,25 @@ section {
         padding-bottom: 8px;
     }
 }
+
+.arrow_container {
+    position: relative;
+    height: 95px;
+    width: 45px;
+
+    img {
+        position: absolute;
+        top: -100%;
+        animation: getDown 1.5s cubic-bezier(0, 0.74, 1, 1.27) infinite;
+    }
+}
+
+@keyframes getDown {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 0;
+    }
+}

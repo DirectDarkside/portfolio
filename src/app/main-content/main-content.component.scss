@@ -15,6 +15,10 @@ app-my-skills {
     width: 100%;
 }
 
+app-projects {
+    width: 100%;
+}
+
 .container {
     max-width: 1440px;
     width: 100%;
@@ -37,13 +41,20 @@ app-my-skills {
     align-items: center;
 }
 
-.right_arrow_container {
+.arrow_container {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
 
     >img {
         max-width: 236px;
         width: 100%;
     }
+}
+
+.right_arrow_container {
+    justify-content: flex-end;
+}
+
+.left_arrow_container {
+    justify-content: flex-start;
 }
