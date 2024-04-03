@@ -21,7 +21,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 40px;
 }
 
 .card {
@@ -35,6 +35,21 @@
 .amount_container {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-start;
+
+    >span {
+        font-size: 48px;
+    }
+}
+
+.reverse_container {
+    width: 100%;
+    flex-direction: row-reverse !important;
+}
+
+.reverse_amount_container {
+    display: flex;
+    justify-content: flex-start;
     align-items: flex-start;
 
     >span {

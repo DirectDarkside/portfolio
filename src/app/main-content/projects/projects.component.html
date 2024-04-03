@@ -6,13 +6,15 @@
         </div>
     </div>
     <div class="content">
-        <div class="card">
-            <div>
-                <img src="/assets/shared/img/projects/join.png" alt="join image">
+        @for (project of projects; track $index;) {
+            <div class="card" [ngClass]="$index == 1 ? 'reverse_container' : '' ">
+                <div>
+                    <img src="/assets/shared/img/projects/{{ project.imageUrl }}" alt="join image">
+                </div>
+                <div [ngClass]="$index == 1 ? 'reverse_amount_container' : 'amount_container'">
+                    <span><b>0{{ $index + 1 }}/0{{ projects.length }}</b></span>
+                </div>
             </div>
-            <div class="amount_container">
-                <span><b>01/05</b></span>
-            </div>
-        </div>
+        }
     </div>
 </section>
