@@ -10,7 +10,7 @@
         <div class="card" [ngClass]="$index == 1 ? 'reverse_container' : '' ">
             <div>
                 <div class="card_image_container">
-                    <div class="card_information_image hover_el">
+                    <div class="card_information_image hover_el" [ngClass]="$index == 1 ? 'print_right' : 'print_left'">
                     </div>
                     <img src="/assets/shared/img/projects/{{ project.imageUrl }}" alt="join image">
 
