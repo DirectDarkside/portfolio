@@ -30,10 +30,20 @@
     >div {
         width: 100%;
     }
-}
 
-.card:hover .hover_el {
-    display: flex;
+    img {
+        filter: grayscale(100%);
+        transition: filter 125ms ease-in-out;
+    }
+
+    &:hover .hover_el{
+        display: flex;
+        filter: grayscale(0%);
+    }
+
+    &:hover img {
+        filter: grayscale(0%);
+    }
 }
 
 .hover_el {}
@@ -77,6 +87,7 @@
     top: 16px;
     left: 16px;
     display: none;
+    z-index: 9000;
 }
 
 .card_information {
