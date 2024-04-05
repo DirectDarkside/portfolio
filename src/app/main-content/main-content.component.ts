@@ -5,6 +5,7 @@ import { HeaderComponent } from '../../assets/shared/components/header/header.co
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SayHiComponent } from './say-hi/say-hi.component';
+import { FooterComponent } from '../../assets/shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-main-content',
@@ -19,6 +20,7 @@ import { SayHiComponent } from './say-hi/say-hi.component';
     MySkillsComponent,
     ProjectsComponent,
     SayHiComponent,
+    FooterComponent,
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss',

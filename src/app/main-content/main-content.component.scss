@@ -28,6 +28,10 @@ app-say-hi {
     width: 100%;
 }
 
+app-footer {
+    width: 100%;
+}
+
 .header_container {
     width: 100%;   
     height: 92px;
@@ -71,4 +75,11 @@ app-say-hi {
 
 .left_arrow_container {
     justify-content: flex-start;
+}
+
+.black_sections {
+    width: 100%;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+    padding-bottom: 32px;
 }

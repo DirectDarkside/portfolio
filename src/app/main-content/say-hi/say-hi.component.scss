@@ -26,11 +26,9 @@
 
 section {
     margin-top: 64px;
-    margin-bottom: 64px;
     background-color: black;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
     color: white;
-    padding: 40px 24px;
+    padding: 40px 40px;
     position: relative;
 
     h2 {
@@ -137,7 +135,7 @@ textarea {
 .go_to_top_container {
     position: absolute;
     bottom: 16px;
-    right: 24px;
+    right: 40px;
 }
 
 .invalid_message {

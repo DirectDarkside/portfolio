@@ -1,0 +1,42 @@
+footer {
+    margin-top: 16px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0px 40px;
+}
+
+.copyright_container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    >b {
+        font-size: 24px;
+    }
+
+    span {
+        font-size: 23px;
+    }
+}
+
+.footer_links_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    >div {
+        display: flex;
+        gap: 24px;
+    }
+
+    >a {
+        width: 100%;
+        text-align: end;
+        text-decoration: none;
+        color: white;
+    }
+}
