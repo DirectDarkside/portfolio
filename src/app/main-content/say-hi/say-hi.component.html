@@ -3,17 +3,41 @@
     <div class="form_container">
         <h3>Want to discuss a new project?</h3>
         <p>Say hello! let's discuss your ideas and make it happen</p>
-        <form onsubmit="">
-            <input type="text" required placeholder="Your name">
-            <input type="text" required placeholder="Your email">
-            <textarea required id="" cols="30" rows="10" placeholder="Your message"></textarea>
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" required
+                placeholder="Your name">
+            @if (!name.valid && name.touched && !name.disabled) {
+            <span class="invalid_message">Please enter your name</span>
+            }
+            <input #mail="ngModel" [(ngModel)]="contactData.email" type="email" name="mail" required
+                placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+            @if (!mail.valid && mail.touched && !mail.disabled) {
+            <span class="invalid_message">Please enter your email</span>
+            }
+            <textarea #message="ngModel" required [(ngModel)]="contactData.message" name="message" cols="30" rows="10"
+                placeholder="Your message"></textarea>
+            @if (!message.valid && message.touched && !message.disabled) {
+            <span class="invalid_message">Please enter a message</span>
+            }
             <div class="checkbox_container">
-                <input type="checkbox" name="" id="" required>
-                <span>I've read the <a href="#">privacy policy</a> and agree to the processing of my data ad outlined.</span>
+                <div>
+                    <input #checkbox="ngModel" [(ngModel)]="checkBox" type="checkbox" name="checkbox" required>
+                    <span>I've read the <a href="#">privacy policy</a> and agree to the processing of my data ad
+                        outlined.</span>
+                </div>
+                @if (!checkbox.valid && !isChecked) {
+                <span class="invalid_message">Please pick the checkbox</span>
+                }
             </div>
+
             <div class="form_button_container">
                 <button type="submit">Send message</button>
             </div>
         </form>
+    </div>
+    <div class="go_to_top_container">
+        <a href="#">
+            <img src="/assets/shared/img/say-hi/top-arrow.png" alt="go to top">
+        </a>
     </div>
 </section>
