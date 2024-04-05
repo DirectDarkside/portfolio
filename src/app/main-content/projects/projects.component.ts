@@ -36,8 +36,8 @@ export class ProjectsComponent {
     },
     {
       imageUrl: 'pokedex.png',
-      testUrl: '',
-      gitHubUrl: '',
+      testUrl: 'https://pokedex.florian-kube.de/',
+      gitHubUrl: 'https://github.com/DirectDarkside/pokedex',
       title: 'Pokedex',
       stack: 'JavaScript | HTML | CSS | Api',
       description: 'Based on the PokéApi a simple library that provides and catalogues pokemon information.'
