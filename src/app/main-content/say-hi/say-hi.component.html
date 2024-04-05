@@ -4,8 +4,11 @@
         <h3>Want to discuss a new project?</h3>
         <p>Say hello! let's discuss your ideas and make it happen</p>
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-            <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" required
+            <div class="input_container">
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" required
                 placeholder="Your name">
+                <span class="focus_title">Your name</span>
+            </div>
             @if (!name.valid && name.touched && !name.disabled) {
             <span class="invalid_message">Please enter your name</span>
             }

@@ -46,10 +46,33 @@ section {
 input {
     @include formElStyle();
     padding-bottom: 16px;
+
+    &:hover .focus_title {
+        display: flex !important;
+    }
 }
 
 textarea {
     @include formElStyle();
+}
+
+.focus_title {
+    display: none;
+    position: absolute;
+    top: -9px;
+    left: 16px;
+    background-color: black;
+    z-index: 100;
+    padding: 0px 4px;
+}
+
+.input_container {
+    width: 100%;
+    position: relative;
+
+    input {
+        width: 100%;
+    }
 }
 
 .form_container {
