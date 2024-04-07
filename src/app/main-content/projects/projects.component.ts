@@ -20,16 +20,16 @@ export class ProjectsComponent {
   }[] = [
     {
       imageUrl: 'join.png',
-      testUrl: '',
-      gitHubUrl: '',
+      testUrl: 'https://join.florian-kube.de/',
+      gitHubUrl: 'https://github.com/DirectDarkside/join',
       title: 'Join',
       stack: 'JavaScript | HTML | CSS',
       description: 'Task manager inspired by the Kanbas System. Create and organize tasks useng drag and drop functions, assign users and categories.'
     },
     {
       imageUrl: 'sharky.png',
-      testUrl: '',
-      gitHubUrl: '',
+      testUrl: 'https://sharkie.florian-kube.de/',
+      gitHubUrl: 'https://github.com/DirectDarkside/sharky',
       title: 'Sharkie',
       stack: 'JavaScript | HTML | CSS',
       description: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.'
