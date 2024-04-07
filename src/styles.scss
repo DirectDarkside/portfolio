@@ -1,4 +1,10 @@
+@import './assets/shared/fonts/font.scss';
+
 $goldFont: #FF9900;
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -23,6 +29,7 @@ body {
 @mixin subHeadline {
     font-size: 78px;
     font-weight: 800;
+    font-family: 'Syne';
 }
 
 h2:hover {

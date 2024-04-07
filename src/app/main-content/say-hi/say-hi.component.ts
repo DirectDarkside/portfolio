@@ -60,4 +60,8 @@ export class SayHiComponent {
     }
     }
 
+  goTopPage() {
+    window.scroll(0, 0);
+  }
+
 }

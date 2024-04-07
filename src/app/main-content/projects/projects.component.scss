@@ -8,11 +8,16 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+    max-width: fit-content;
 
-    >h2 {
+    h2 {
         @include subHeadline();
         margin: 0;
+    }
+
+    p {
+        font-family: 'Overpass';
+        font-size: 23px;
     }
 }
 
@@ -30,6 +35,7 @@ section {
 
 .card {
     display: flex;
+    font-family: 'Overpass';
 
     >div {
         width: 100%;
@@ -50,6 +56,11 @@ section {
 }
 
 .hover_el {}
+
+.card_counter {
+    font-family: 'Syne';
+    font-weight: 700;
+}
 
 .amount_container {
     display: flex;
@@ -130,6 +141,12 @@ section {
     position: absolute;
     right: 0;
     animation: slide_in_right 0.5s;
+}
+
+.card_title {
+    font-family: 'Syne';
+    font-weight: 800;
+    font-size: 45px;
 }
 
 .card_stack {

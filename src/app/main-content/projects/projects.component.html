@@ -17,10 +17,10 @@
                 </div>
             </div>
             <div class="card_information" [ngClass]="$index == 1 ? 'reverse_amount_container' : 'amount_container'">
-                <span><b>0{{ $index + 1 }}/0{{ projects.length }}</b></span>
+                <span><b class="card_counter">0{{ $index + 1 }}/0{{ projects.length }}</b></span>
                 <div class="information_container hover_el" [ngClass]="$index == 1 ? 'right_slide_container' : 'left_slide_container' ">
                     <div>
-                        <h3>{{ project.title }}</h3>
+                        <h3 class="card_title">{{ project.title }}</h3>
                         <p class="card_stack">{{ project.stack }}</p>
                         <p class="card_description">{{ project.description }}</p>
 
