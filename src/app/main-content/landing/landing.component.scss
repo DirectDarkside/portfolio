@@ -1,87 +1,157 @@
-@import './../../../styles.scss';
+@import "./../../../styles.scss";
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
 
-    h1{
-        text-align: center;
-        font-size: 128px;
-        margin-top: 32px;
-        margin-bottom: 0;
-        font-family: 'Syne';
-        font-weight: 800;
-    }
+  h1 {
+    text-align: center;
+    font-size: 128px;
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-family: "Syne";
+    font-weight: 800;
+  }
 
-    b {
-        font-family: 'Overpass';
-    }
+  b {
+    font-family: "Overpass";
+  }
 }
 
 .landing_line {
-    height: 3px;
-    width: 65%;
-    background-color: black;
+  height: 3px;
+  width: 65%;
+  background-color: black;
 }
 
 .landing_info_container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 
-    b {
-        color: $goldFont;
-        font-size: 48px;
-        white-space: nowrap;
-    }
+  b {
+    color: $goldFont;
+    font-size: 48px;
+    white-space: nowrap;
+  }
 }
 
 .landing_mail_container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex: 1;
-    font-family: 'Overpass';
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex: 1;
+  font-family: "Overpass";
 
-    >span {
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.mail_container {
+    position: relative;
+    display: flex;
+    align-items: center !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+
+    > span {
+        position: absolute;
+        left: -40px;
         transform: rotate(-90deg);
         display: flex;
         align-items: center;
-    }
-
-    >div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 8px;
-        padding-bottom: 8px;
-    }
+      }
 }
 
 .arrow_container {
-    position: relative;
-    height: 95px;
-    width: 45px;
+  position: relative;
+  height: 95px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
 
-    img {
-        position: absolute;
-        top: -100%;
-        animation: getDown 1.5s cubic-bezier(0, 0.74, 1, 1.27) infinite;
-    }
+  img {
+    position: absolute;
+    top: -100%;
+    animation: getDown 1.5s cubic-bezier(0, 0.74, 1, 1.27) infinite;
+  }
 }
 
 @keyframes getDown {
-    0% {
-        top: -100%;
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  section {
+    h1 {
+      font-size: 90px;
+    }
+  }
+
+  .landing_info_container {
+    b {
+      font-size: 32px;
+    }
+  }
+
+  .landing_line {
+    width: 45%;
+  }
+}
+
+@media (max-width: 780px) {
+  section {
+    h1 {
+      font-size: 64px;
+    }
+  }
+
+  .landing_info_container {
+    b {
+      font-size: 24px;
+    }
+  }
+
+  .landing_line {
+    width: 25%;
+  }
+}
+
+@media(max-width: 580px) {
+    section {
+        h1{
+            font-size: 45px;
+        }
+    }
+}
+
+@media(max-width: 420px) {
+    section {
+        h1{
+            font-size: 32px;
+        }
     }
 
-    100% {
-        top: 0;
+    .landing_info_container{
+        b{
+            font-size: 16px;
+        }
     }
 }
