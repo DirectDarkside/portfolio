@@ -46,3 +46,45 @@ section {
         @include subHeadline();
     }
 }
+
+@media(max-width: 1060px) {
+
+  section {
+    margin-top: 40px;
+  }
+
+  .skills_container {
+    gap: 80px;
+    padding: 80px;
+  }
+}
+
+@media(max-width: 770px) {
+  .sub_headline_container {
+    top: -32px;
+
+    h2{
+      font-size: 56px;
+    }
+  }
+}
+
+@media(max-width: 530px) {
+  .sub_headline_container {
+    top: -24px;
+
+    h2{
+      font-size: 38px;
+    }
+  }
+
+  .skills_container {
+    gap: 32px;
+    padding: 32px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
