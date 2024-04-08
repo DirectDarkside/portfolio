@@ -329,3 +329,15 @@ section {
         }
     }
 }
+
+@media(max-width: 380px) {
+    .information_container {
+        h3{
+            font-size: 38px;
+        }
+    }
+
+    .reverse_container {
+        width: auto;
+    }
+}
