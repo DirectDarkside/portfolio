@@ -8,6 +8,11 @@
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" required
                 placeholder="Your name">
                 <span class="focus_title">Your name</span>
+                @if(!name.valid && name.touched && !name.disabled) {
+                    <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
+                } @else if (name.valid && name.touched && !name.disabled) {
+                    <img class="validation_img" src="/assets/shared/img/say-hi/valid.png" alt="invalid image">
+                }
             </div>
             @if (!name.valid && name.touched && !name.disabled) {
             <span class="invalid_message">Please enter your name</span>
@@ -16,6 +21,11 @@
                 <input #mail="ngModel" [(ngModel)]="contactData.email" type="email" name="mail" required
                 placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                 <span class="focus_email">Your email</span>
+                @if(!mail.valid && mail.touched && !mail.disabled) {
+                    <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
+                } @else if (mail.valid && mail.touched && !mail.disabled) {
+                    <img class="validation_img" src="/assets/shared/img/say-hi/valid.png" alt="invalid image">
+                }
             </div>
             @if (!mail.valid && mail.touched && !mail.disabled) {
             <span class="invalid_message">Please enter your email</span>
@@ -24,6 +34,11 @@
                 <textarea #message="ngModel" required [(ngModel)]="contactData.message" name="message" cols="30" rows="10"
                 placeholder="Your message"></textarea>
                 <span class="focus_message">Your message</span>
+                @if(!message.valid && message.touched && !message.disabled) {
+                    <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
+                } @else if (message.valid && message.touched && !message.disabled) {
+                    <img class="validation_img" src="/assets/shared/img/say-hi/valid.png" alt="invalid image">
+                }
             </div>
             @if (!message.valid && message.touched && !message.disabled) {
             <span class="invalid_message">Please enter a message</span>

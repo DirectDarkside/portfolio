@@ -63,6 +63,8 @@ input {
 
 textarea {
     @include formElStyle();
+    resize: vertical;
+    min-height: 150px
 }
 
 .focus_title {
@@ -80,6 +82,12 @@ textarea {
     &:focus-within .focus_title{
         display: flex;
     }
+}
+
+.validation_img {
+    position: absolute;
+    right: 0;
+    top: 16px;
 }
 
 .email_container {
@@ -138,7 +146,7 @@ textarea {
     form {
         display: flex;
         flex-direction: column;
-
+        gap: 16px;
     }
 }
 
