@@ -7,7 +7,7 @@
     </div>
     <div class="content">
         @for (project of projects; track $index;) {
-        <div class="card" [ngClass]="$index == 1 ? 'reverse_container' : '' ">
+        <div class="card" data-aos="flip-down" [ngClass]="$index == 1 ? 'reverse_container' : '' ">
             <div>
                 <div class="card_image_container">
                     <b class="mobile_card_counter">0{{ $index + 1 }}/0{{ projects.length }}</b>

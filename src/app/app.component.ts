@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../assets/shared/components/header/header.component';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,8 @@ import { HeaderComponent } from '../assets/shared/components/header/header.compo
 })
 export class AppComponent {
   title = 'Florian Kube';
+
+  constructor() {
+    AOS.init();
+  }
 }

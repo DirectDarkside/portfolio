@@ -22,11 +22,10 @@ export class SayHiComponent {
     message: "",
   }
 
-
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: './app/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -37,7 +36,6 @@ export class SayHiComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    console.log(ngForm);
     if(ngForm.form.controls['checkbox'].status == "INVALID") {
       this.isChecked = false;
     } else {
@@ -45,7 +43,7 @@ export class SayHiComponent {
         this.http.post(this.post.endPoint, this.post.body(this.contactData))
           .subscribe({
             next: (response) => {
-  
+              console.log(response);
               ngForm.resetForm();
             },
             error: (error) => {
@@ -54,7 +52,7 @@ export class SayHiComponent {
             complete: () => console.info('send post complete'),
           });
       } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-  
+        console.info('test post complete');
         ngForm.resetForm();
       }
     }
