@@ -10,6 +10,10 @@ header {
     font-family: "Overpass";
   }
 
+  >span {
+    cursor: pointer;
+  }
+
   > img {
     width: 32px;
     height: 32px;

@@ -31,7 +31,7 @@
             <div class="checkbox_container">
                 <div>
                     <input #checkbox="ngModel" [(ngModel)]="checkBox" type="checkbox" name="checkbox" required>
-                    <span>I've read the <a href="#">privacy policy</a> and agree to the processing of my data ad
+                    <span>I've read the <a [routerLink]="'/privacy-policy'">privacy policy</a> and agree to the processing of my data ad
                         outlined.</span>
                 </div>
                 @if (!checkbox.valid && !isChecked) {
