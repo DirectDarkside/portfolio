@@ -4,7 +4,7 @@
         <h3>Want to discuss a new project?</h3>
         <p>Say hello! let's discuss your ideas and make it happen</p>
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-            <div class="input_container">
+            <div class="title_container">
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" required
                 placeholder="Your name">
                 <span class="focus_title">Your name</span>
@@ -12,13 +12,19 @@
             @if (!name.valid && name.touched && !name.disabled) {
             <span class="invalid_message">Please enter your name</span>
             }
-            <input #mail="ngModel" [(ngModel)]="contactData.email" type="email" name="mail" required
+            <div class="email_container">
+                <input #mail="ngModel" [(ngModel)]="contactData.email" type="email" name="mail" required
                 placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                <span class="focus_email">Your email</span>
+            </div>
             @if (!mail.valid && mail.touched && !mail.disabled) {
             <span class="invalid_message">Please enter your email</span>
             }
-            <textarea #message="ngModel" required [(ngModel)]="contactData.message" name="message" cols="30" rows="10"
+            <div class="message_container">
+                <textarea #message="ngModel" required [(ngModel)]="contactData.message" name="message" cols="30" rows="10"
                 placeholder="Your message"></textarea>
+                <span class="focus_message">Your message</span>
+            </div>
             @if (!message.valid && message.touched && !message.disabled) {
             <span class="invalid_message">Please enter a message</span>
             }

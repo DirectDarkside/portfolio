@@ -24,6 +24,16 @@
     }
 }
 
+@mixin focus_el() {
+    display: none;
+    position: absolute;
+    top: -9px;
+    left: 16px;
+    background-color: black;
+    z-index: 100;
+    padding: 0px 4px;
+}
+
 section {
     margin-top: 64px;
     background-color: black;
@@ -56,22 +66,54 @@ textarea {
 }
 
 .focus_title {
-    display: none;
-    position: absolute;
-    top: -9px;
-    left: 16px;
-    background-color: black;
-    z-index: 100;
-    padding: 0px 4px;
+    @include focus_el();
 }
 
-.input_container {
+.title_container {
     width: 100%;
     position: relative;
 
     input {
         width: 100%;
     }
+
+    &:focus-within .focus_title{
+        display: flex;
+    }
+}
+
+.email_container {
+    width: 100%;
+    position: relative;
+
+    input {
+        width: 100%;
+    }
+
+    &:focus-within .focus_email{
+        display: flex;
+    }
+}
+
+.focus_email {
+    @include focus_el();
+}
+
+.message_container {
+    width: 100%;
+    position: relative;
+
+    textarea {
+        width: 100%;
+    }
+
+    &:focus-within .focus_message {
+        display: flex;
+    }
+}
+
+.focus_message {
+    @include focus_el();
 }
 
 .form_container {
