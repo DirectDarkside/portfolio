@@ -206,6 +206,28 @@ textarea {
     }
 }
 
+.popup_feedback_container {
+    position: absolute;
+    top: 93px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_feedback {
+    padding: 8px 16px;
+    background-color: aquamarine;
+    border-radius: 8px;
+
+    >span {
+        font-size: 24px;
+        font-family: 'Syne';
+    }
+}
+
 @media(max-width: 770px) {
 
     section {

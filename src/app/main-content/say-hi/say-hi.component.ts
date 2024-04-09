@@ -22,7 +22,7 @@ export class SayHiComponent {
     email: "",
     message: "",
   }
-
+  sendMail = false;
   mailTest = false;
 
   post = {
@@ -44,7 +44,10 @@ export class SayHiComponent {
         this.http.post(this.post.endPoint, this.post.body(this.contactData))
           .subscribe({
             next: (response) => {
-              console.log(response);
+              this.sendMail = true;
+              setTimeout(() => {
+                this.sendMail = false;
+              }, 2000);
               ngForm.resetForm();
             },
             error: (error) => {
