@@ -6,12 +6,12 @@
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div class="title_container">
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" required
-                placeholder="Your name">
+                    placeholder="Your name">
                 <span class="focus_title">Your name</span>
                 @if(!name.valid && name.touched && !name.disabled) {
-                    <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
+                <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
                 } @else if (name.valid && name.touched && !name.disabled) {
-                    <img class="validation_img" src="/assets/shared/img/say-hi/valid.png" alt="invalid image">
+                <img class="validation_img" src="/assets/shared/img/say-hi/valid.png" alt="invalid image">
                 }
             </div>
             @if (!name.valid && name.touched && !name.disabled) {
@@ -19,34 +19,43 @@
             }
             <div class="email_container">
                 <input #mail="ngModel" [(ngModel)]="contactData.email" type="email" name="mail" required
-                placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                 <span class="focus_email">Your email</span>
                 @if(!mail.valid && mail.touched && !mail.disabled) {
-                    <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
+                <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
                 } @else if (mail.valid && mail.touched && !mail.disabled) {
-                    <img class="validation_img" src="/assets/shared/img/say-hi/valid.png" alt="invalid image">
+                <img class="validation_img" src="/assets/shared/img/say-hi/valid.png" alt="invalid image">
                 }
             </div>
             @if (!mail.valid && mail.touched && !mail.disabled) {
+            @if(mail.errors?.['required']) {
             <span class="invalid_message">Please enter your email</span>
+            } @else if (mail.errors?.['pattern']) {
+            <span class="invalid_message">Please enter a correct email</span>
+            }
             }
             <div class="message_container">
-                <textarea #message="ngModel" required [(ngModel)]="contactData.message" name="message" cols="30" rows="10"
-                placeholder="Your message"></textarea>
+                <textarea #message="ngModel" minlength="3" required [(ngModel)]="contactData.message" name="message" cols="30"
+                    rows="10" placeholder="Your message"></textarea>
                 <span class="focus_message">Your message</span>
                 @if(!message.valid && message.touched && !message.disabled) {
-                    <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
+                <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
                 } @else if (message.valid && message.touched && !message.disabled) {
-                    <img class="validation_img" src="/assets/shared/img/say-hi/valid.png" alt="invalid image">
+                <img class="validation_img" src="/assets/shared/img/say-hi/valid.png" alt="invalid image">
                 }
             </div>
             @if (!message.valid && message.touched && !message.disabled) {
-            <span class="invalid_message">Please enter a message</span>
+                @if (message.errors?.['minlength']) {
+                    <span class="invalid_message">Please enter at least 3 letters</span>
+                } @else {
+                    <span class="invalid_message">Please enter a message</span>
+                }
             }
             <div class="checkbox_container">
                 <div>
                     <input #checkbox="ngModel" [(ngModel)]="checkBox" type="checkbox" name="checkbox" required>
-                    <span>I've read the <a [routerLink]="'/privacy-policy'">privacy policy</a> and agree to the processing of my data ad
+                    <span>I've read the <a [routerLink]="'/privacy-policy'">privacy policy</a> and agree to the
+                        processing of my data ad
                         outlined.</span>
                 </div>
                 @if (!checkbox.valid && !isChecked) {
