@@ -21,6 +21,20 @@ body {
 
 }
 
+app-legal-notice {
+    width: 100%;
+    max-width: 1440px;
+}
+
+app-header {
+    width: 100%;
+    position: fixed;
+    background-color: #FFFCF3;
+    z-index: 990;
+    left: 0;
+    top: 0;
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
