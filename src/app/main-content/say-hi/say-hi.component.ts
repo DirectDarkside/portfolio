@@ -23,10 +23,10 @@ export class SayHiComponent {
     message: "",
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: './app/sendMail.php',
+    endPoint: 'https://florian-kube.de/php/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
