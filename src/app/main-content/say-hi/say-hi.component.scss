@@ -154,3 +154,46 @@ textarea {
         outline: 2px solid red;
     }
 }
+
+@media(max-width: 770px) {
+
+    section {
+        h2{
+            font-size: 56px;
+        }
+    }
+
+    .form_container{
+        h3{
+            text-align: center;
+        }
+
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+}
+
+@media(max-width: 530px) {
+    .go_to_top_container {
+        display: none;
+    }
+
+    section {
+        h2 {
+            font-size: 36px;
+        }
+    }
+
+    .form_container {
+        h3{
+            font-size: 24px;
+        }
+
+        p{
+            font-size: 18px;
+        }
+    }
+}
