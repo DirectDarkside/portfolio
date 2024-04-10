@@ -24,7 +24,7 @@ export class ProjectsComponent {
       gitHubUrl: 'https://github.com/DirectDarkside/join',
       title: 'Join',
       stack: 'JavaScript | HTML | CSS',
-      description: 'Task manager inspired by the Kanbas System. Create and organize tasks useng drag and drop functions, assign users and categories.'
+      description: 'Task manager inspired by the Kanbas System. Create and organize tasks using drag and drop functions, assign users and categories.'
     },
     {
       imageUrl: 'sharky.png',

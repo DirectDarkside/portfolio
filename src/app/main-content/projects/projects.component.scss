@@ -140,7 +140,7 @@ section {
 
 .left_slide_container {
     position: absolute;
-    left: 0px;
+    left: 24px;
     animation: slide_in_left 0.5s;
 }
 
@@ -191,7 +191,7 @@ section {
     }
 
     100% {
-        left: 0;
+        left: 24px;
     }
 }
 
@@ -211,7 +211,7 @@ section {
     }
 
     100% {
-        left: 24px;
+        left: 0px;
     }
 }
 
@@ -224,7 +224,7 @@ section {
     }
 
     .left_slide_container {
-        left: 24px;
+        left: 0px;
         animation: slide_in_left_1480 0.5s;
     }
 }
