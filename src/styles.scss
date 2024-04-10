@@ -1,5 +1,5 @@
 @import './assets/shared/fonts/font.scss';
-@import 'aos/dist/aos.css';
+// @import 'aos/dist/aos.css';
 
 $goldFont: #FF9900;
 
@@ -28,7 +28,7 @@ app-legal-notice, app-privacy-policy {
 
 app-header {
     width: 100%;
-    position: fixed;
+    // position: fixed;
     background-color: #FFFCF3;
     z-index: 990;
     left: 0;

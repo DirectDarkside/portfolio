@@ -70,6 +70,11 @@ section {
 }
 
 @media(max-width: 530px) {
+  section {
+    padding: 0 8px;
+    width: auto;
+  }
+
   .sub_headline_container {
     top: -24px;
 

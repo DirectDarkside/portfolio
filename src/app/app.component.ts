@@ -14,6 +14,6 @@ export class AppComponent {
   title = 'Florian Kube';
 
   constructor() {
-    AOS.init();
+    // AOS.init();
   }
 }
