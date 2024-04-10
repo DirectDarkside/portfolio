@@ -56,7 +56,7 @@ export class SayHiComponent {
             complete: () => console.info('send post complete'),
           });
       } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-        console.info('test post complete');
+        console.info('test post complete', this.contactData);
         ngForm.resetForm();
       }
     }
