@@ -11,4 +11,8 @@ import { RouterModule } from '@angular/router';
 export class FooterComponent {
   mail = 'kube.florian13@gmail.com';
 
+  goTopPage() {
+    window.scroll(0, 0);
+  }
+
 }
