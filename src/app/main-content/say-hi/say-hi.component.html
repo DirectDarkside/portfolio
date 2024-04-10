@@ -19,7 +19,7 @@
             }
             <div class="email_container">
                 <input #mail="ngModel" [(ngModel)]="contactData.email" type="email" name="mail" required
-                    placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]+[a-zA-Z]">
                 <span class="focus_email">Your email</span>
                 @if(!mail.valid && mail.touched && !mail.disabled) {
                 <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
