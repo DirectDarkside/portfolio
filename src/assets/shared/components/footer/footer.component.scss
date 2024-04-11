@@ -47,6 +47,8 @@ footer {
 
 .mobile_link {
   display: none;
+  text-decoration: none;
+  color: white;
 }
 
 .footer_logo {
@@ -84,6 +86,10 @@ footer {
 
   .mobile_link {
     display: inline;
+  }
+
+  .legal_notice_container {
+    justify-content: center;
   }
 
   footer {
