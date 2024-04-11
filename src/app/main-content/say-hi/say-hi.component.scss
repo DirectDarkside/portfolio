@@ -34,6 +34,17 @@
     padding: 0px 4px;
 }
 
+@mixin form_button() {
+    width: fit-content;
+    text-decoration: none;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 16px 24px;
+    border: 2px solid white;
+    font-size: 23px;
+}
+
 section {
     margin-top: 64px;
     background-color: black;
@@ -173,15 +184,20 @@ textarea {
     justify-content: center;
 
     >button {
-        width: fit-content;
-        text-decoration: none;
-        border: none;
-        background-color: black;
-        color: white;
-        padding: 16px 24px;
-        border: 2px solid white;
-        font-size: 23px;
+        @include form_button();
         cursor: pointer;
+    }
+}
+
+.form_button_container_disabled {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    >button {
+        @include form_button();
+        cursor: no-drop;
+        background-color: rgb(211, 211, 211, 0.1);
     }
 }
 

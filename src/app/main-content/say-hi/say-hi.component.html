@@ -58,14 +58,17 @@
                         processing of my data ad
                         outlined.</span>
                 </div>
-                @if (!checkbox.valid && !isChecked) {
-                <span class="invalid_message">Please pick the checkbox</span>
-                }
             </div>
 
-            <div class="form_button_container">
-                <button type="submit">Send message</button>
-            </div>
+            @if (name.valid && mail.valid && message.valid && checkbox.valid) {
+                <div class="form_button_container">
+                    <button type="submit">Send message</button>
+                </div>
+            } @else {
+                <div class="form_button_container_disabled">
+                    <button disabled>Send message</button>
+                </div>
+            }
         </form>
     </div>
     <div class="go_to_top_container">
