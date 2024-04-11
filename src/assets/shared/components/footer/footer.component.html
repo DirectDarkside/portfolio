@@ -18,6 +18,8 @@
         </div>
         <a  href="https://www.florian-kube.de" class="mobile_link footer_logo">[FK]</a>
         <a href="mailto:kube.florian13@gmail.com" class="mobile_link">{{ mail }}</a>
-        <a [routerLink]="'/legal-notice'" (click)="goTopPage()">Legal notice</a>
+        <div class="legal_notice_container">
+            <a class="legal_notice" [routerLink]="'/legal-notice'" (click)="goTopPage()">Legal notice</a>
+        </div>
     </div>
 </footer>

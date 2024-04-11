@@ -1,79 +1,103 @@
 footer {
-    margin-top: 16px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    padding: 0px 40px;
-    font-family: 'Overpass';
-
+  margin-top: 16px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0px 40px;
+  font-family: "Overpass";
 }
 
 .copyright_container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 
-    >b {
-        font-size: 24px;
-    }
+  > b {
+    font-size: 24px;
+  }
 
-    span {
-        font-size: 23px;
-    }
+  span {
+    font-size: 23px;
+  }
 }
 
 .footer_links_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  > div {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+    gap: 24px;
+  }
 
-    >div {
-        display: flex;
-        gap: 24px;
-    }
+  a {
+    img {
+        transition: transform 100ms linear;
 
-    >a {
-        width: 100%;
-        text-align: end;
-        text-decoration: none;
-        color: white;
+        &:hover {
+            transform: translateY(-10px);
+        }
     }
+  }
 }
 
 .mobile_link {
-    display: none;
+  display: none;
 }
 
 .footer_logo {
-    font-weight: 800;
-    font-family: 'Overpass';
-    font-size: 23px;
+  font-weight: 800;
+  font-family: "Overpass";
+  font-size: 23px;
 }
 
-@media(max-width: 530px) {
-    .copyright_container {
-        display: none;
+.legal_notice_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.legal_notice {
+  text-decoration: none;
+  color: white;
+  width: auto;
+  background-image: linear-gradient(white 0 0);
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+
+  &:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+  }
+}
+
+@media (max-width: 530px) {
+  .copyright_container {
+    display: none;
+  }
+
+  .mobile_link {
+    display: inline;
+  }
+
+  footer {
+    justify-content: center;
+
+    .footer_links_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+
+      > a {
+        text-align: center;
+      }
     }
-
-    .mobile_link {
-        display: inline;
-    }
-
-    footer {
-        justify-content: center;
-
-        .footer_links_container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 16px;
-
-            >a {
-                text-align: center;
-            }
-        }
-    }
+  }
 }
