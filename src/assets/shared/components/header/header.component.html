@@ -1,5 +1,11 @@
 <header>
-    <span [routerLink]="'/'"><b>[FK]</b></span>
+    <div class="header_logo_container">
+        <span [routerLink]="'/'"><b>[FK]</b></span>
+        <div class="language_container">
+            <a (click)="translate.switchLanguage('en')">en</a>
+            <a (click)="translate.switchLanguage('de')">de</a>
+        </div>
+    </div>
     <img src="assets/shared/img/burger menu S3.png" (click)="changeStatus()">
 </header>
 <div class="header_popup" [ngClass]="popup ? 'popup_open' : 'popup_close' ">
@@ -10,8 +16,8 @@
                 <img src="assets/shared/img/header/close.png" (click)="changeStatus()">
             </div>
         </div>
-        <a href="#about_me" (click)="changeStatus()">About me</a>
-        <a href="#my_skills" (click)="changeStatus()">My skills</a>
+        <a href="#about_me" (click)="changeStatus()">{{ 'about_me' | translate }}</a>
+        <a href="#my_skills" (click)="changeStatus()">{{ 'my_skills' | translate }}</a>
         <a href="#portfolio" (click)="changeStatus()">Portfolio</a>
     </div>
 </div>

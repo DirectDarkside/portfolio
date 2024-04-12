@@ -21,6 +21,20 @@ header {
   }
 }
 
+.header_logo_container {
+  display: flex;
+  gap: 16px;
+}
+
+.language_container {
+  display: flex;
+  gap: 8px;
+
+  >a {
+    cursor: pointer;
+  }
+}
+
 .popup_open {
   display: block;
 }
@@ -85,6 +99,7 @@ header {
     background-size: 0% 4px;
     background-repeat: no-repeat;
     transition: background-size 0.3s, background-position 0s 0.3s; 
+    text-align: center;
 
     &:hover {
       background-position: 100% 100%;
@@ -121,6 +136,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+
+  img {
+    cursor: pointer;
+  }
 }
 
 
