@@ -13,8 +13,21 @@ import { TranslationService } from '../../../../app/services/translation.service
 })
 export class HeaderComponent {
 
+  englishButton = true;
+  germanButton = false;
+
   popup: boolean = false;
   translate = inject(TranslationService);
+
+  setDe() {
+    this.englishButton = false;
+    this.germanButton = true;
+  }
+
+  setEn() {
+    this.englishButton = true;
+    this.germanButton = false;
+  }
 
   changeStatus() {
     !this.popup ? this.popup = true : this.popup = false;

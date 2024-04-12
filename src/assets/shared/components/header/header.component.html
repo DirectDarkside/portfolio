@@ -2,8 +2,8 @@
     <div class="header_logo_container">
         <span [routerLink]="'/'"><b>[FK]</b></span>
         <div class="language_container">
-            <a (click)="translate.switchLanguage('en')">en</a>
-            <a (click)="translate.switchLanguage('de')">de</a>
+            <a [ngClass]="englishButton ? 'active_language': ''" (click)="translate.switchLanguage('en'); setEn()">en</a>
+            <a [ngClass]="germanButton ? 'active_language': ''" (click)="translate.switchLanguage('de'); setDe()">de</a>
         </div>
     </div>
     <img src="assets/shared/img/burger menu S3.png" (click)="changeStatus()">
