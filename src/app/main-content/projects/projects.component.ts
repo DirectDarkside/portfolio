@@ -1,22 +1,24 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
 
+  translate = inject(TranslateService);
   projects: {
     imageUrl: string,
     testUrl: string,
     gitHubUrl: string,
     title: string,
     stack: string,
-    description: string,
+    language_key: string,
   }[] = [
     {
       imageUrl: 'join.png',
@@ -24,7 +26,7 @@ export class ProjectsComponent {
       gitHubUrl: 'https://github.com/DirectDarkside/join',
       title: 'Join',
       stack: 'JavaScript | HTML | CSS',
-      description: 'Task manager inspired by the Kanbas System. Create and organize tasks using drag and drop functions, assign users and categories.'
+      language_key: 'projects_join',
     },
     {
       imageUrl: 'sharky.png',
@@ -32,7 +34,7 @@ export class ProjectsComponent {
       gitHubUrl: 'https://github.com/DirectDarkside/sharky',
       title: 'Sharkie',
       stack: 'JavaScript | HTML | CSS',
-      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.'
+      language_key: 'projects_sharkie',
     },
     {
       imageUrl: 'pokedex.png',
@@ -40,7 +42,7 @@ export class ProjectsComponent {
       gitHubUrl: 'https://github.com/DirectDarkside/pokedex',
       title: 'Pokedex',
       stack: 'JavaScript | HTML | CSS | Api',
-      description: 'Based on the PokéApi a simple library that provides and catalogues pokemon information.'
+      language_key: 'projects_pokedex',
     },
   ];
 

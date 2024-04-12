@@ -4,6 +4,10 @@
     "landing_headline": "Frontend<br>Entwickler",
     "scroll_down": "Nach<br>unten<br>scrollen",
     "about_me_text": "Ich bin ein Front-End-Entwickler mit Wohnsitz in Güstrow, Deutschland. Ich helfe gerne Designern und Unternehmen dabei, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Entwicklerkarriere mit einer Stelle als Junior-Webentwickler fortzusetzen. Wenn Sie denken, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
-    "about_me_button": "Lass uns reden"
+    "about_me_button": "Lass uns reden",
+    "projects_para": "Erkunden Sie hier eine Auswahl meiner Arbeiten -<br>Interagieren Sie mit einem Teil meiner Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "projects_join": "Aufgabenverwalter inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "projects_sharkie": "Ein einfaches Jump-and-Run-Spiel basierend auf objektorientierten Programmierung. Helfe Sharkie, Münzen und Giftflaschen zu finden, um den Killerwal zu besiegen.",
+    "projects_pokedex": "Basierend auf der PokéApi eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
 
 }

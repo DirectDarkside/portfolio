@@ -2,7 +2,7 @@
     <div class="subheadline_center">
         <div class="subheadline_container">
             <h2>Portfolio</h2>
-            <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+            <p [innerHTML]="'projects_para' | translate"></p>
         </div>
     </div>
     <div class="content">
@@ -22,7 +22,7 @@
                     <div>
                         <h3 class="card_title">{{ project.title }}</h3>
                         <p class="card_stack">{{ project.stack }}</p>
-                        <p class="card_description">{{ project.description }}</p>
+                        <p class="card_description">{{ project.language_key | translate }}</p>
 
                         <div class="card_links">
                             <a href="{{ project.gitHubUrl }}" target="_blank">GitHub</a>

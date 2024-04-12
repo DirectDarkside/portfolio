@@ -4,5 +4,9 @@
     "landing_headline": "Frontend<br>Developer",
     "scroll_down": "Scroll<br>Down",
     "about_me_text": "I am a Front-end developer based in Güstrow, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position. If you think I’d be a good match for your projects, contact me!",
-    "about_me_button": "Let`s talk"
+    "about_me_button": "Let`s talk",
+    "projects_para": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "projects_join": "Task manager inspired by the Kanbas System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "projects_sharkie": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
+    "projects_pokedex": "Based on the PokéApi a simple library that provides and catalogues pokemon information."
 }
