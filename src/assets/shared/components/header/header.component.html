@@ -5,8 +5,10 @@
 <div class="header_popup" [ngClass]="popup ? 'popup_open' : 'popup_close' ">
     <div class="popup_content">
         <div class="content_header">
-            <span><b>[FK]</b></span>
-            <img src="assets/shared/img/header/close.png" (click)="changeStatus()">
+            <div class="header">
+                <span><b>[FK]</b></span>
+                <img src="assets/shared/img/header/close.png" (click)="changeStatus()">
+            </div>
         </div>
         <a href="#about_me" (click)="changeStatus()">About me</a>
         <a href="#my_skills" (click)="changeStatus()">My skills</a>
