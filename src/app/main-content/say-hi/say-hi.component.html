@@ -1,13 +1,13 @@
 <section id="form">
-    <h2>Say Hi!</h2>
+    <h2>{{ "say_hi_headline" | translate }}</h2>
     <div class="form_container">
-        <h3>Want to discuss a new project?</h3>
-        <p>Say hello! let's discuss your ideas and make it happen</p>
+        <h3>{{ "say_hi_subheadline" | translate }}</h3>
+        <p>{{ "say_hi_para" | translate }}</p>
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div class="title_container">
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" required
-                    placeholder="Your name">
-                <span class="focus_title">Your name</span>
+                    placeholder="{{ 'say_hi_name' | translate }}">
+                <span class="focus_title">{{ "say_hi_name" | translate }}</span>
                 @if(!name.valid && name.touched && !name.disabled) {
                 <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
                 } @else if (name.valid && name.touched && !name.disabled) {
@@ -15,12 +15,12 @@
                 }
             </div>
             @if (!name.valid && name.touched && !name.disabled) {
-            <span class="invalid_message">Please enter your name</span>
+            <span class="invalid_message">{{ "say_hi_name_invalid" | translate }}</span>
             }
             <div class="email_container">
                 <input #mail="ngModel" [(ngModel)]="contactData.email" type="email" name="mail" required
-                    placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}">
-                <span class="focus_email">Your email</span>
+                    placeholder="{{ 'say_hi_email' | translate }}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}">
+                <span class="focus_email">{{ "say_hi_email" | translate }}</span>
                 @if(!mail.valid && mail.touched && !mail.disabled) {
                 <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
                 } @else if (mail.valid && mail.touched && !mail.disabled) {
@@ -29,15 +29,15 @@
             </div>
             @if (!mail.valid && mail.touched && !mail.disabled) {
             @if(mail.errors?.['required']) {
-            <span class="invalid_message">Please enter your email</span>
+            <span class="invalid_message">{{ "say_hi_email_invalid" | translate }}</span>
             } @else if (mail.errors?.['pattern']) {
-            <span class="invalid_message">Please enter a correct email</span>
+            <span class="invalid_message">{{ "say_hi_email_invalid_pattern" | translate }}</span>
             }
             }
             <div class="message_container">
                 <textarea #message="ngModel" minlength="3" required [(ngModel)]="contactData.message" name="message" cols="30"
-                    rows="10" placeholder="Your message"></textarea>
-                <span class="focus_message">Your message</span>
+                    rows="10" placeholder="{{ 'say_hi_message' | translate }}"></textarea>
+                <span class="focus_message">{{ "say_hi_message" | translate }}</span>
                 @if(!message.valid && message.touched && !message.disabled) {
                 <img class="validation_img" src="/assets/shared/img/say-hi/invalid.png" alt="invalid image">
                 } @else if (message.valid && message.touched && !message.disabled) {
@@ -46,27 +46,27 @@
             </div>
             @if (!message.valid && message.touched && !message.disabled) {
                 @if (message.errors?.['minlength']) {
-                    <span class="invalid_message">Please enter at least 3 letters</span>
+                    <span class="invalid_message">{{ "say_hi_message_invalid_length" | translate }}</span>
                 } @else {
-                    <span class="invalid_message">Please enter a message</span>
+                    <span class="invalid_message">{{ "say_hi_message_invalid" | translate }}</span>
                 }
             }
             <div class="checkbox_container">
                 <div>
-                    <input #checkbox="ngModel" [(ngModel)]="checkBox" type="checkbox" name="checkbox" required>
-                    <span>I've read the <a [routerLink]="'/privacy-policy' " (click)="goTopPage()">privacy policy</a> and agree to the
+                    <input #checkbox="ngModel" id="checkbox" [(ngModel)]="checkBox" type="checkbox" name="checkbox" required>
+                    <label for="checkbox">I've read the <a [routerLink]="'/privacy-policy' " (click)="goTopPage()">{{ "say_hi_privacy_policy" | translate }}</a> and agree to the
                         processing of my data ad
-                        outlined.</span>
+                        outlined.</label>
                 </div>
             </div>
 
             @if (name.valid && mail.valid && message.valid && checkbox.valid) {
                 <div class="form_button_container">
-                    <button type="submit">Send message</button>
+                    <button type="submit">{{ "say_hi_button" | translate }}</button>
                 </div>
             } @else {
                 <div class="form_button_container_disabled">
-                    <button disabled>Send message</button>
+                    <button disabled>{{ "say_hi_button" | translate }}</button>
                 </div>
             }
         </form>

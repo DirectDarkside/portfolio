@@ -8,6 +8,19 @@
     "projects_para": "Erkunden Sie hier eine Auswahl meiner Arbeiten -<br>Interagieren Sie mit einem Teil meiner Projekten, um meine Fähigkeiten in Aktion zu sehen.",
     "projects_join": "Aufgabenverwalter inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
     "projects_sharkie": "Ein einfaches Jump-and-Run-Spiel basierend auf objektorientierten Programmierung. Helfe Sharkie, Münzen und Giftflaschen zu finden, um den Killerwal zu besiegen.",
-    "projects_pokedex": "Basierend auf der PokéApi eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
-
+    "projects_pokedex": "Basierend auf der PokéApi eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
+    "say_hi_headline": "Sag Hallo!",
+    "say_hi_subheadline": "Sie möchten ein neues Projekt besprechen?",
+    "say_hi_para": "Hallo! Lassen Sie uns Ihre Ideen besprechen und verwirklichen",
+    "say_hi_name": "Dein Name",
+    "say_hi_email": "Deine Email",
+    "say_hi_message": "Deine Nachricht",
+    "say_hi_name_invalid": "Bitte geben Sie Ihren Namen ein",
+    "say_hi_email_invalid": "Bitte geben Sie Ihre E-Mail ein",
+    "say_hi_email_invalid_pattern": "Bitte geben Sie eine korrekte E-Mail ein",
+    "say_hi_message_invalid_length": "Bitte geben Sie mindestens 3 Buchstaben ein",
+    "say_hi_message_invalid": "Bitte geben Sie eine Nachricht ein",
+    "say_hi_checkbox": "Ich habe die <a [routerLink]=\"/privacy-policy\" (click)=\"goTopPage()\">{{ 'say_hi_privacy_policy' | translate }}</a> gelesen und bin mit der Verarbeitung meiner Daten einverstanden.",
+    "say_hi_privacy_policy": "Datenschutzbestimmungen",
+    "say_hi_button": "Nachricht senden"
 }

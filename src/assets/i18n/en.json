@@ -8,5 +8,19 @@
     "projects_para": "Explore a selection of my work here - Interact with projects to see my skills in action.",
     "projects_join": "Task manager inspired by the Kanbas System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "projects_sharkie": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
-    "projects_pokedex": "Based on the PokéApi a simple library that provides and catalogues pokemon information."
+    "projects_pokedex": "Based on the PokéApi a simple library that provides and catalogues pokemon information.",
+    "say_hi_headline": "Say Hi!",
+    "say_hi_subheadline": "Want to discuss a new project?",
+    "say_hi_para": "Say hello! let's discuss your ideas and make it happen",
+    "say_hi_name": "Your name",
+    "say_hi_email": "Your email",
+    "say_hi_message": "Your message",
+    "say_hi_name_invalid": "Please enter your name",
+    "say_hi_email_invalid": "Please enter your email",
+    "say_hi_email_invalid_pattern": "Please enter a correct email",
+    "say_hi_message_invalid_length": "Please enter at least 3 letters",
+    "say_hi_message_invalid": "Please enter a message",
+    "say_hi_checkbox": "I've read the <a [routerLink]=\"/'privacy-policy'\" (click)=\"goTopPage()\">privacy_policy</a> and agree to the processing of my data as outlined.",
+    "say_hi_privacy_policy": "privacy policy",
+    "say_hi_button":"Send message"
 }

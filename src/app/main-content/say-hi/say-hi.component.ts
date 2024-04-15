@@ -3,12 +3,13 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-say-hi',
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterModule],
+  imports: [FormsModule, CommonModule, RouterModule, TranslateModule],
   templateUrl: './say-hi.component.html',
   styleUrl: './say-hi.component.scss'
 })
@@ -24,6 +25,7 @@ export class SayHiComponent {
   }
   sendMail = false;
   mailTest = false;
+  translate = inject(TranslateService);
 
   post = {
     endPoint: 'https://florian-kube.de/php/sendMail.php',
