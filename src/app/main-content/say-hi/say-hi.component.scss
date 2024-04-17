@@ -294,3 +294,17 @@ textarea {
         }
     }
 }
+
+@media(max-width: 360px) {
+    section {
+        padding: 64px 24px;
+    }
+
+    input {
+        padding-left: 8px;
+    }
+
+    textarea {
+        padding-left: 8px;
+    }
+}
