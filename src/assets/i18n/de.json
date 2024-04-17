@@ -20,7 +20,10 @@
     "say_hi_email_invalid_pattern": "Bitte geben Sie eine korrekte E-Mail ein",
     "say_hi_message_invalid_length": "Bitte geben Sie mindestens 3 Buchstaben ein",
     "say_hi_message_invalid": "Bitte geben Sie eine Nachricht ein",
-    "say_hi_checkbox": "Ich habe die <a [routerLink]=\"/privacy-policy\" (click)=\"goTopPage()\">{{ 'say_hi_privacy_policy' | translate }}</a> gelesen und bin mit der Verarbeitung meiner Daten einverstanden.",
+    "say_hi_checkbox_first": "Ich habe die ",
+    "say_hi_checkbox_second": " gelesen und bin mit der Verarbeitung meiner Daten einverstanden.",
+    "say_hi_checkbox": "Ich habe die <a [routerLink]='/privacy-policy' (click)='goTopPage()'>{{ 'say_hi_privacy_policy' | translate }}</a> gelesen und bin mit der Verarbeitung meiner Daten einverstanden.",
     "say_hi_privacy_policy": "Datenschutzbestimmungen",
-    "say_hi_button": "Nachricht senden"
+    "say_hi_button": "Nachricht senden",
+    "footer_legal_notice": "Impressum"
 }

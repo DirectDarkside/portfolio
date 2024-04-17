@@ -20,7 +20,10 @@
     "say_hi_email_invalid_pattern": "Please enter a correct email",
     "say_hi_message_invalid_length": "Please enter at least 3 letters",
     "say_hi_message_invalid": "Please enter a message",
-    "say_hi_checkbox": "I've read the <a [routerLink]=\"/'privacy-policy'\" (click)=\"goTopPage()\">privacy_policy</a> and agree to the processing of my data as outlined.",
+    "say_hi_checkbox_first": "I've read the ",
+    "say_hi_checkbox_second": " and agree to the processing of my data ad outlined.",
+    "say_hi_checkbox": "I've read the <a [routerLink]='/privacy-policy' (click)='goTopPage()'>privacy_policy</a> and agree to the processing of my data as outlined.",
     "say_hi_privacy_policy": "privacy policy",
-    "say_hi_button":"Send message"
+    "say_hi_button":"Send message",
+    "footer_legal_notice": "Legal notice"
 }
