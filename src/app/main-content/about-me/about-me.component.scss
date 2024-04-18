@@ -45,6 +45,12 @@ h2 {
   margin-left: 48px;
 }
 
+.profile_img {
+  width: 532px;
+  height: 532px;
+  border: 1px solid black;
+}
+
 .img_container {
   position: relative;
 
@@ -117,9 +123,10 @@ h2 {
     }
   }
 
-  img {
+  .profile_img {
     width: 100%;
     object-fit: contain;
+    border: none;
   }
 }
 
