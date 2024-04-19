@@ -91,6 +91,10 @@ header {
   gap: 40px;
   clip-path: polygon(100% 0, 100% 98%, 0% 85%, 0 0%);
 
+  span {
+    font-family: 'Syne';
+  }
+
   a {
     font-weight: 700;
     font-size: 97px;
@@ -104,6 +108,7 @@ header {
     background-repeat: no-repeat;
     transition: background-size 0.3s, background-position 0s 0.3s; 
     text-align: center;
+    font-family: 'Syne';
 
     &:hover {
       background-position: 100% 100%;
