@@ -6,6 +6,8 @@ $goldFont: #FF9900;
 html {
     scroll-behavior: smooth;
     overflow-x: clip;
+    scrollbar-width: thin;
+    scrollbar-color: $goldFont #FFFCF3;
 }
 
 body {
@@ -42,6 +44,8 @@ app-header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1440px;
+    width: 100%;
 }
 
 @mixin subHeadline {

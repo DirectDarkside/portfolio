@@ -82,6 +82,11 @@ section {
   .skills_container {
     padding: 50px;
   }
+
+  section {
+    width: auto;
+    padding: 0 8px;
+  }
 }
 
 @media(max-width: 750px) {
