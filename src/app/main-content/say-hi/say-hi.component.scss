@@ -66,6 +66,7 @@ section {
 input {
     @include formElStyle();
     padding-bottom: 16px;
+    font-family: 'Overpass';
 
     &:hover .focus_title {
         display: flex !important;
@@ -75,7 +76,8 @@ input {
 textarea {
     @include formElStyle();
     resize: vertical;
-    min-height: 150px
+    min-height: 150px;
+    font-family: 'Overpass';
 }
 
 .focus_title {
