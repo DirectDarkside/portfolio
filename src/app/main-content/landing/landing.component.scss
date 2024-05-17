@@ -65,12 +65,14 @@ section {
     flex-direction: row !important;
     justify-content: flex-start;
 
-    > span {
+    > a {
         position: absolute;
         left: -40px;
         transform: rotate(-90deg);
         display: flex;
         align-items: center;
+        text-decoration: none;
+        color: black;
       }
 }
 
