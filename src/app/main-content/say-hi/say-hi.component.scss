@@ -167,6 +167,10 @@ textarea {
     display: flex;
     flex-direction: column;
     margin: 16px 0;
+
+    input[type=checkbox] {
+        accent-color: $goldFont;
+    }
     
     >div {
         display: flex;

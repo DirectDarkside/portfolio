@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { TranslationService } from '../../../../app/services/translation.service';
+import { TranslationService } from '../../../../app/services/translation/translation.service';
 
 @Component({
   selector: 'app-footer',
