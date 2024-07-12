@@ -1,10 +1,29 @@
 <header>
     <div class="header_logo_container">
         <span [routerLink]="'/'"><b>[FK]</b></span>
-        <div class="language_container">
+        <!-- <div class="language_container">
             <a [ngClass]="englishButton ? 'active_language': ''" (click)="translate.switchLanguage('en'); setEn()">en</a>
             <a [ngClass]="germanButton ? 'active_language': ''" (click)="translate.switchLanguage('de'); setDe()">de</a>
-        </div>
+        </div> -->
+
+        <ul>
+            <li>
+                <a href="#0">Select Language</a>
+                <ul>
+                    <li (click)="translate.switchLanguage('en'); setEn()">
+                        <img src="/assets/shared/img/header/uk.png" alt="uk image">
+                        <a [ngClass]="englishButton ? 'active_language': ''">en</a>
+                    </li>
+                    <li (click)="translate.switchLanguage('de'); setDe()">
+                        <img src="/assets/shared/img/header/germany.png" alt="uk image">
+                        <a [ngClass]="germanButton ? 'active_language': ''"(click)="translate.switchLanguage('de'); setDe()">de</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+
+
     </div>
     <img src="assets/shared/img/burger menu S3.png" (click)="changeStatus()">
 </header>
