@@ -64,10 +64,10 @@ ul {
       display: block;
       margin: 8px 0px;
       padding: 0;
-      background: #ababab;
-      border: 2px solid #ababab;
-      border-right: 2px solid #ababab;
-      border-bottom: 2px solid #ababab;
+      background: #c7c1c1;
+      border: 2px solid #c7c1c1;
+      border-right: 2px solid #c7c1c1;
+      border-bottom: 2px solid #c7c1c1;
       border-radius: 5px;
       transition: opacity 0.2s, visibility 0.2s;
       li {
@@ -243,4 +243,20 @@ ul {
             font-size: 45px;
         }
     }
+}
+
+@media(max-width: 380px) {
+  ul {
+    a {
+      display: flex;
+      text-align: center;
+    }
+  }
+
+  .header_logo_container {
+    >span {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
