@@ -25,14 +25,14 @@
 
 
     </div>
-    <img src="assets/shared/img/burger menu S3.png" (click)="changeStatus()">
+    <img src="assets/shared/img/burger menu S3.png" (click)="changeStatus()" alt="open popup">
 </header>
 <div class="header_popup" [ngClass]="popup ? 'popup_open' : 'popup_close' ">
     <div class="popup_content">
         <div class="content_header">
             <div class="header">
                 <span><b>[FK]</b></span>
-                <img src="assets/shared/img/header/close.png" (click)="changeStatus()">
+                <img src="assets/shared/img/header/close.png" alt="close popup" (click)="changeStatus()">
             </div>
         </div>
         <a href="#about_me" (click)="changeStatus()">{{ 'about_me' | translate }}</a>
