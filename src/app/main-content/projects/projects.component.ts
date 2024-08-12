@@ -41,9 +41,17 @@ export class ProjectsComponent {
       testUrl: 'https://pokedex.florian-kube.de/',
       gitHubUrl: 'https://github.com/DirectDarkside/pokedex',
       title: 'Pokedex',
-      stack: 'JavaScript | HTML | CSS | Api',
+      stack: 'JavaScript | HTML | CSS | API',
       language_key: 'projects_pokedex',
     },
+    {
+      imageUrl: 'ring-of-fire.png',
+      testUrl: 'https://ring-of-fire.florian-kube.de/',
+      gitHubUrl: 'https://github.com/DirectDarkside/ring-of-fire',
+      title: 'Ring Of Fire',
+      stack: 'Angular | TypeScript | Firebase | HTML | SCSS',
+      language_key: 'projects_ring_of_fire',
+    }
   ];
 
 }

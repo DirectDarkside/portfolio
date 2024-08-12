@@ -7,18 +7,18 @@
     </div>
     <div class="content">
         @for (project of projects; track $index;) {
-        <div class="card" data-aos="flip-down" [ngClass]="$index == 1 ? 'reverse_container' : '' ">
+        <div class="card" data-aos="flip-down" [ngClass]="$index % 2 != 0 ? 'reverse_container' : '' ">
             <div>
                 <div class="card_image_container">
                     <b class="mobile_card_counter">0{{ $index + 1 }}/0{{ projects.length }}</b>
-                    <div class="card_information_image hover_el" [ngClass]="$index == 1 ? 'print_right' : 'print_left'">
+                    <div class="card_information_image hover_el" [ngClass]="$index % 2 != 0 ? 'print_right' : 'print_left'">
                     </div>
                     <img src="/assets/shared/img/projects/{{ project.imageUrl }}" alt="join image">
                 </div>
             </div>
-            <div class="card_information" [ngClass]="$index == 1 ? 'reverse_amount_container' : 'amount_container'">
+            <div class="card_information" [ngClass]="$index % 2 != 0 ? 'reverse_amount_container' : 'amount_container'">
                 <span><b class="card_counter">0{{ $index + 1 }}/0{{ projects.length }}</b></span>
-                <div class="information_container hover_el" [ngClass]="$index == 1 ? 'right_slide_container' : 'left_slide_container' ">
+                <div class="information_container hover_el" [ngClass]="$index % 2 != 0 ? 'right_slide_container' : 'left_slide_container' ">
                     <div>
                         <h3 class="card_title">{{ project.title }}</h3>
                         <p class="card_stack">{{ project.stack }}</p>

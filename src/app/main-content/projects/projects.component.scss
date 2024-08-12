@@ -45,6 +45,7 @@ section {
     img {
         filter: grayscale(100%);
         transition: filter 125ms ease-in-out;
+        max-width: 620px;
     }
 
     &:hover .hover_el{
