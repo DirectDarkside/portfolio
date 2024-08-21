@@ -44,14 +44,14 @@ export class ProjectsComponent {
       stack: 'JavaScript | HTML | CSS | API',
       language_key: 'projects_pokedex',
     },
-    {
-      imageUrl: 'ring-of-fire.png',
-      testUrl: 'https://ring-of-fire.florian-kube.de/',
-      gitHubUrl: 'https://github.com/DirectDarkside/ring-of-fire',
-      title: 'Ring Of Fire',
-      stack: 'Angular | TypeScript | Firebase | HTML | SCSS',
-      language_key: 'projects_ring_of_fire',
-    }
+    // {
+    //   imageUrl: 'ring-of-fire.png',
+    //   testUrl: 'https://ring-of-fire.florian-kube.de/',
+    //   gitHubUrl: 'https://github.com/DirectDarkside/ring-of-fire',
+    //   title: 'Ring Of Fire',
+    //   stack: 'Angular | TypeScript | Firebase | HTML | SCSS',
+    //   language_key: 'projects_ring_of_fire',
+    // }
   ];
 
 }
